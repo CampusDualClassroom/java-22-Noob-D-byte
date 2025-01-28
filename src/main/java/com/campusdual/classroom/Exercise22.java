@@ -29,7 +29,13 @@ Exercise22 {
 
     public static void printElementsAndIndex(List<String> customList) {
 
-        //Recorrer la lista en el metodo printElementsAndIndex() elemento a elemento,
+        //Forma más eficiente de recorrer una lista
+        //for (String s : customList) {
+        //  System.out.println(s + " = " + customList.indexOf(s));
+        //}
+
+
+        //Recorrer la lista en el metodo printElementsAndIndex() elemento a elemento,(Este for tradicional es más eficiente para recorrer un array)
 
         for (int i = 0; i < customList.size(); i++) {
             // mostrando por pantalla el valor de cada elemento y su índice correspondiente en la lista
